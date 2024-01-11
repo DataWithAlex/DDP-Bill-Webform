@@ -24,8 +24,12 @@ st.write("""
 
 # st.image(bill_list, use_column_width=True)
 
-if st.button('FLSenate.Gov Bill List'):
-    webbrowser.open_new_tab("https://www.flsenate.gov/Session/Bills/2023")
+#if st.button('FLSenate.Gov Bill List'):
+#    webbrowser.open_new_tab("https://www.flsenate.gov/Session/Bills/2023")
+
+# Create a button-like structure with a clickable hyperlink
+st.markdown('[FLSenate.Gov Bill List](https://www.flsenate.gov/Session/Bills/2023)')
+
 
 # Set a default value for the bill link
 default_bill_link = "https://www.flsenate.gov/Session/Bill/2023/23/ByCategory/?Tab=BillText"
@@ -65,11 +69,14 @@ if st.button('Generate Summary'):
 st.title('GitHub Repo for FastAPI & Streamit')
 st.write("Created by Alex Sciuto - AI Engineering Intern @ DDP")
 
-if st.button('FastAPI Repo'):
-    webbrowser.open_new_tab("https://github.com/DataWithAlex/Digital_Democracy_API")
+#if st.button('FastAPI Repo'):
+#    webbrowser.open_new_tab("https://github.com/DataWithAlex/Digital_Democracy_API")
 
-if st.button('Streamlit App Repo'):
-    webbrowser.open_new_tab("https://github.com/DataWithAlex/DDP-Bill-Webform")
+st.markdown('[FastAPI Repo](https://github.com/DataWithAlex/Digital_Democracy_API)')
+st.markdown('[Streamlit App Repo](https://github.com/DataWithAlex/DDP-Bill-Webform)')
+
+#if st.button('Streamlit App Repo'):
+#    webbrowser.open_new_tab("https://github.com/DataWithAlex/DDP-Bill-Webform")
 
 
 
