@@ -31,7 +31,7 @@ if st.button('FLSenate.Gov Bill List'):
 default_bill_link = "https://www.flsenate.gov/Session/Bill/2023/23/ByCategory/?Tab=BillText"
 
 # Add a horizontal line
-st.markdown("<hr>", unsafe_allow_html=True)
+# st.markdown("<hr>", unsafe_allow_html=True)
 
 # Get user input for the bill link with a default value
 bill_link = st.text_input('Enter the bill link from FLSenate.gov:', value=default_bill_link)
@@ -59,10 +59,10 @@ if st.button('Generate Summary'):
         st.error('Please enter a valid bill link.')
 
 # Add a horizontal line
-st.markdown("<hr>", unsafe_allow_html=True)
+# st.markdown("<hr>", unsafe_allow_html=True)
 
 # Add a heading 2
-st.markdown("<h2> GitHub Repo for FastAPI & Streamit </h2>", unsafe_allow_html=True)
+st.title('GitHub Repo for FastAPI & Streamit')
 st.write("Created by Alex Sciuto - AI Engineering Intern @ DDP")
 
 if st.button('FastAPI Repo'):
